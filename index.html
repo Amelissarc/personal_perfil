@@ -11,42 +11,137 @@
 </head>
 <body>
     <header>
+        <!-- Link a inicio -->
         <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="#">Plan</a></li>
-                <li><a href="#">Mapa</a></li>
-                <li><a href="#">App</a></li>
-                <li><a href="#">Catedra</a></li>
+            <ul class="navbar">
+                <li class="item"><a href="../index.html">Inicio</a></li>
+                <li class="item"><a href="#">Plan</a></li>
+                <li class="item"><a href="#">Mapa</a></li>
+                <li class="item"><a href="#">App</a></li>
+                <li class="item"><a href="#">Catedra</a></li>
             </ul>
         </nav>
     </header>
+    <main>
+            <!-- Section hero -->
     <section class="hero">
-        <div class="card_pensum">
-            <div>
-                <div class="title_card">
-                    <h2>Primer año</h2>
-                </div>
-                <div class="title_card">
-                    <h2>Otros</h2>
-                </div>
+        <div class="card_column">
+            <!-- Firts column -->
+            <div class="title_card">
+                <h2>Primer año</h2>
             </div>
+            <div class="info_card">
+                <ul>
+                    <li>Diseño grafico I</li>
+                    <li>Morfología I</li>
+                    <li>Tipográfia I</li>
+                    <li>Comunicación I</li>
+                    <li>Historia I</li>
+                    <li>Tecnología I</li>
+                    <li>Electiva I </li>
+                </ul>
+            </div>
+            <div class="title_card">
+                <h2>Otros</h2>
+            </div>
+            <div class="info_card">
+                <ul>
+                    <li>Curso fundamentos de UX ( Coursera )</li>
+                    <li>Medios audiovisuales ( Jorge tadeo Bogota/Colombia )</li>
+                </ul>
+            </div> 
         </div>
-        <div class="img_center">
-            <img src="/img/imgperfil.jpg" alt="Jaime Blanco" class="perfil">
+        <!-- Second column -->
+        <div class="card_column">
+            <figure>
+                <img src="/img/imgperfil.jpg" alt="Jaime Blanco" class="perfil">
+            </figure>
             <h1>Jaime Blanco</h1>
-        </div>
-        <div lass="card_pensum">
-            <div>
-                <div class="title_card">
-                    <h2>Segundo año</h2>
-                </div>
-                <div class="title_card">
-                    <h2>Tercer año</h2>
-                </div>
+            <div class="description">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eius non obcaecati neque blanditiis consectetur quo soluta iusto explicabo,
+                    suscipit minima autem tempore, impedit id magni incidunt, ut harum optio at.
+                </p>
             </div>
+            <div class="redes">
+                <a href="https://www.instagram.com/jablanco89/" i class="fa-brands fa-instagram" target="_blank" rel="noopener"></a>
+                <a href="https://www.behance.net/jaimeblanco6" i class="fa-brands fa-behance" target="_blank" rel="noopener"></a>
+                <a href="https://www.linkedin.com/in/jaime-blanco-16228657/"i class="fa-brands fa-linkedin-in" target="_blank" rel="noopener"></a>
+            </div>
+        </div>
+        <!-- Third column -->
+        <div lass="card_column">
+            <div class="title_card">
+                <h2>Segundo año</h2>
+            </div>
+            <div class="info_card">
+                <ul>
+                    <li>Diseño gráfico II</li>
+                    <li>Morfología II</li>
+                    <li>Tipográfia II</li>
+                    <li>Comunicación II</li>
+                    <li>Historia II</li>
+                    <li>Medios expresivos I</li>
+                </ul>
+            </div>
+            <div class="title_card">
+                <h2>Tercer año</h2>
+            </div>
+            <div class="info_card">
+                <ul>
+                    <li>Diseño gráfico III</li>
+                    <li>Legislación y practica profesional</li>
+                    <li>Electiva sociohumanistica </li>
+                    <li>Medios expresivos II</li>
+                </ul>
+            </div> 
         </div>
     </section>
+    <!-- Section alumns -->
+    <section class="team">
+        <h3 class="avatar_name">Integrantes del grupo</h3>
+        <div class="perfiles">
+            <div class="avatar">
+                <img src="./img/avatar1.jpg" alt="avatar">
+                <a href="#" class="avatar_name">Belén Pelayo</a>
+            </div>
+            <div class="avatar">
+                <img src="./img/avatar2.jpg" alt="avatar">
+                <a href="#" class="avatar_name">José Guzmán</a>
+            </div>
+            <div class="avatar">
+                <img src="./img/avatar3.jpg" alt="avatar">
+                <a href="#" class="avatar_name">Agustina Berstein</a>
+            </div>
+        </div>
+
+    </section>
+    </main>
+    <footer>
+        <div class="catedra">
+            <div class="column_footer">
+                <a href="logo">
+                    <img src="./img/cropped-logo-dgpc-21.png" alt="Logo de Melissa Rincon" class="logo">       
+                </a>  
+                <p>
+                    UBA / FADU <br> Cátedra Ocampo / Comisión 1 <br> Diseño de Imagen y Sonido <br> Diseño Gráfico por Computación <br> Turno Noche / Año 2024 <br> Cuatrimestre 1
+                </p>
+            </div>
+            <div class="column_footer">
+                <p>
+                    UBA - Universidad de Buenos Aires <br> Rector: Prof. Dr. Ricardo Gelpi / Vicerrector: Cont. Emiliano Yacobitti <br> FADU - Facultad de Arquitectura, Diseño y Urbanismo DGPC <br> Diseño Gráfico por Computación <br> Decano: D.G. Carlos Venancio <br> 1º cuatrimestre 2024 / Cátedra: Anibal Ocampo <br> Titular: D.G. Anibal Ocampo / Adjunto: D.G. Christian Sesin <br>JTP: D.G. Adriana Luna, D.G. Marisol Bicego <br>Docentes: D.G. Christian Sesin | D.G. Marisol Bicego | DIS Aldana Traversi <br>Equipo: VN03
+                </p>
+            </div>
+        </div>
+        <div class="legales">
+            <small>
+                Los contenidos publicados en estas páginas son en el marco de un trabajo práctico realizado por alumnos de una materia de la Universidad de Buenos Aires. Los textos, logotipos, fotografías, tipografías, etc., pueden no ser de su autoría y sólo son utilizados a los fines prácticos del ejercicio.
+            </small>
+        </div>
+    </footer>
+
 </body>
 <script src="./js/script.js"></script>
+<script src="https://kit.fontawesome.com/e915ed1876.js" crossorigin="anonymous"></script>
 </html>
