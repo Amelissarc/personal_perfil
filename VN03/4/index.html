@@ -1,27 +1,38 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../4/css/style.css">
     <title>Jaime Blanco</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>
-        <!-- Link a inicio -->
+        <input type="checkbox" id="menu" />
+        <!-- Etiqueta del menú (hamburguesa) -->
         <nav>
+            <label for="menu" class="menu_btn">
+                <i class="fas fa-bars fa-lg" id="menu-icon"></i>
+                <i class="fa-solid fa-x" id="close-icon"></i>
+            </label>
+            <!-- Lista de elementos del menú -->
             <ul class="navbar">
-                <li class="item"><a href="../index.html">Inicio</a></li>
-                <li class="item"><a href="#">Plan</a></li>
-                <li class="item"><a href="#">Mapa</a></li>
-                <li class="item"><a href="#">App</a></li>
-                <li class="item"><a href="#">Catedra</a></li>
+                <li class="item"><a href="../4/index.html">Inicio</a></li>
+                <li class="item"><a href="plan.html">Plan</a></li>
+                <li class="item"><a href="mapa.html">Mapa</a></li>
+                <li class="item"><a href="app/index.html">App</a></li>
+                <li class="item"><a href="https://catedraocampo.com.ar" target="_blank">Cátedra</a></li>
+                <li class="item">
+                    <a href="../4/ejercicios/index.html">Ejercicios</a>
+                    <ul class="navbar_column">
+                        <li><a href="./ejercicios/pages/ejercicio.html">CSS Style</a></li>
+                        <li><a href="./ejercicios/pages/responsive.html">Responsive</a></li>
+                        <li><a href="./ejercicios/pages/ejercicio_3.html">Menú Styles</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
     </header>
+    
     <main>
             <!-- Section hero -->
     <section class="hero">
@@ -72,7 +83,7 @@
         <!-- Second column -->
         <div class="card_column">
             <figure>
-                <img src="/img/avatar.jpg" alt="Jaime Blanco" class="perfil">
+                <img src="../4/img/imgperfil.jpg" alt="Jaime Blanco" class="perfil">
             </figure>
             <h1>Jaime Blanco</h1>
             <h4>Diseñador gráfico</h4>
@@ -139,26 +150,25 @@
         <h3 class="avatar_name">Integrantes del grupo</h3>
         <div class="perfiles">
             <div class="avatar">
-                <img src="./img/avatar1.jpg" alt="avatar">
-                <a href="#" class="avatar_name">Belén Pelayo</a>
+                <img src="../Img/IMG-20240517-WA0003.jpg" alt="avatar">
+                <a href="../1/index.html" class="avatar_name">José Guzmán</a>
             </div>
             <div class="avatar">
-                <img src="./img/avatar2.jpg" alt="avatar">
-                <a href="#" class="avatar_name">José Guzmán</a>
+                <img src="../Img/IMG-20240517-WA0006.jpg" alt="avatar">
+                <a href="../2/index.html" class="avatar_name">Belén Pelayo</a>
             </div>
             <div class="avatar">
-                <img src="./img/avatar3.jpg" alt="avatar">
-                <a href="#" class="avatar_name">Agustina Berstein</a>
+                <img src="../Img/IMG-20240517-WA0004.jpg" alt="avatar">
+                <a href="../3/index.html" class="avatar_name">Agustina Berstein</a>
             </div>
         </div>
-
     </section>
     </main>
     <footer>
         <div class="catedra">
             <div class="column_footer">
-                <a href="logo">
-                    <img src="./img/cropped-logo-dgpc-21.png" alt="logocatedra" class="logo">       
+                <a href="https://catedraocampo.com.ar">
+                    <img src="./img/cropped-logo-dgpc-21.png" alt="LogoCatedra" class="logo">       
                 </a>  
                 <p>
                     UBA / FADU <br> Cátedra Ocampo / Comisión 1 <br> Diseño de Imagen y Sonido <br> Diseño Gráfico por Computación <br> Turno Noche / Año 2024 <br> Cuatrimestre 1
@@ -177,7 +187,8 @@
             </small>
         </div>
     </footer>
-
+    <script src="https://kit.fontawesome.com/e915ed1876.js" crossorigin="anonymous"></script>
+    </html>
 </body>
 <script src="./js/app.js"></script>
 <script src="https://kit.fontawesome.com/e915ed1876.js" crossorigin="anonymous"></script>

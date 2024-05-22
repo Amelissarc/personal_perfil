@@ -44,11 +44,16 @@ a {
     color: var(--black);
 }
 
-ul, li { 
-    list-style: none;
-}
 
 /* Header */
+
+label {
+    display: none;
+}
+
+label i {
+    color: var(--green-yellow);
+}
 
 header {
     display: flex;
@@ -56,25 +61,71 @@ header {
     align-items: center;
     background-color: var(--office-green);
     font-size: 20px;
-    position: fixed;
-    width: 100%;
 }
 
-nav, .navbar{
+nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;  
+    position: relative;
 }
 
-nav .navbar, .item, a {
+nav ul {
+    display: flex;
+}
+
+.navbar li a {
+    display: block;
+}
+
+.navbar_column {
+    position: absolute;
+    left: 300px;
+    background-color: var(--office-green); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    display: none; 
+}
+
+.navbar_column li a {
+    display: block;
+    padding: 5px 10px;
+    color: var(--white); 
+    text-decoration: none; 
+}
+
+/* Estilo para los enlaces del navbar */
+.navbar a {
+    border-radius: 20px;
     padding: 5px 10px;
     font-weight: bold;
     color: var(--white);
+    text-decoration: none; 
 }
 
+ul, li { 
+    list-style: none;
+}
+
+.navbar li:hover .navbar_column {
+    display: block;
+}
+
+#menu {
+    display: none;
+}
+
+/* Estilos para la etiqueta del menú (hamburguesa) */
+.menu_btn {
+    display: none;
+  }
+  
+/* Estilos para el ícono de hamburguesa */
+.fa-bars::before {
+    content: "☰"; /* Usamos un contenido unicode para simular el ícono */
+}
 
 /* Home */
-
 main {
     background-color: var(--onyx);
     color: var(--white);
@@ -85,7 +136,7 @@ main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding:6% 0%;
+    padding-bottom: 10px;
 }
 
 /* Card */
@@ -190,8 +241,7 @@ main {
     flex-direction: row;
     justify-content: space-evenly;
     background-color: var(--white);
-    padding: 20px;
-    
+    padding: 20px;   
 }
 
 .avatar a{
@@ -245,45 +295,116 @@ img.logo {
     padding: 0% 8%;
 }
 
-@media only screen and (max-width: 767px) {
+@media (max-width: 40rem) {
+
+    /* Header */
+
     header {
-        display: flex;
-        justify-content: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--office-green);
+      font-size: 20px;
+    }
+  
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: space-evenly;
+      position: relative;
+      width: 100%;
     }
 
-    nav .navbar, .item, a {
-        padding: 5px 5px;
+    .navbar_column {
+        position:fixed;
+        display: none; 
     }
 
+   .menu_btn {
+    cursor: pointer;
+    display: block;
+    }
+  
+    #menu:checked ~ nav ul {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: var(--green-yellow);
+      align-items: flex-end;
+      padding: 0;
+      margin: 0;
+    }
+  
+    nav ul {
+      display: none;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+  
+    .navbar li a {
+      display: block;
+      color: var(--black);
+      text-decoration: none;
+      padding: 10px;
+      text-align: right;
+    }
+
+    #menu {
+        display: none;
+    }
+  
+    #close-icon {
+        display: none;
+    }
+  
+    #menu:checked ~ nav .menu_btn #menu-icon {    
+        display: none; 
+    }
+  
+    #menu:checked ~ nav .menu_btn #close-icon {
+        display: inline-block; 
+    }
+
+    /* main */
     .hero {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        padding:20% 0%;
+        padding-bottom: 10px;
     }
 
-    .hero div.card_column {
-        padding: 2% 0;
-    }
-
-    .perfiles {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .catedra {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 20px;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .column_footer {
+    .card_column {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: flex-start;
     }
-}
+
+    .perfiles {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: var(--white);
+        padding: 20px;   
+    }
+    
+    /* footer */
+    .column_footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .catedra {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .legales, small {
+        padding: 0%;
+    }
+
+  }

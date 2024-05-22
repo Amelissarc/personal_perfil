@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/* Colors palette */
+:root {
+--orange: #ef8354;
+--grey: #bfc0c0;
+--white: #ffffff;
+--black: #2d3142;
+}
+
+/* general */
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: "Nunito Sans", sans-serif;
+    width: 100%;
+    min-height: 100vh;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--orange);
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--black);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+p{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+/* header */
+
+header{
+    margin: auto; 
+    padding: 0%;
+    display: flex; /*bloquea el tamaño del ancho y alto*/
+    justify-content: space-between;
+    background-color:  var(--black);
+}
+
+header h1{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin: 1rem;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav{
+    margin: 1rem;
+    padding: 1rem;
+    width: 50%;
+    font-display: flex;
+
+}
+
+header nav ul li{ 
+    text-align: center; 
+    list-style: none; 
+    word-spacing: 1.5rem;
+}
+
+header nav ul li a{
+    text-decoration: none; 
+    padding: 0.5rem;
+    color: #f7f7f7;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: inline-block; 
+}
+
+header nav ul li a:hover{
+    transform: scale(1.1);
+    color: var(--);
+}
+
+/* main */
+
+main {
+    background-color: var(--white);
+    color: var(--black);
+    margin: 1%;
+    height: 20rem;
+}
+
+main h2{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+main ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+main ul a:hover{
+    color: var(--white);
+    background-color: var(--orange);
+}
+
+/* Perfiles */
+
+.perfil {
+    width: 300px;
+    height: 300px;
+    border-radius: 100%;
+  
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 26px;
+}
+
+.perfiles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: var(--white);
+    padding: 20px;
+    
+}
+
+.avatar a{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    color: var(--office-green);
+    font-size: 24px;
+}
+
+.team img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+
+/* Footer */
+footer{
+    height: auto;
+    width: 100%;
+    justify-content: center;
+    background-color: var(--black);
+}
+
+.final{
+    display: flex;
+    justify-content: space-around;
+    padding: 2%;
+}
+
+.facultad li,
+.catedra li{
+    list-style: none;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.comision li{
+    list-style: none;
+    color: var(--white);
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+footer figure{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer figure img{
+    align-content: center;
+}
+
+footer p {
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding: 1%;
+}
